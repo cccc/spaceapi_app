@@ -88,7 +88,7 @@ def make_space_json(state):
 #                'icon': {'open':'url','closed':'url'},
                 },
             'contact': {
-                    'irc': 'irc://freenode.org/#cccc',
+                    'irc': 'irc://irc.freenode.org/#cccc',
                     'email': 'mail@koeln.ccc.de',
                     'twitter': '@ccc_koeln',
                     'phone': '+49 221-49 24 119',
