@@ -80,7 +80,7 @@ def make_space_json(state):
             'location': {
                     'address': 'Chaos Computer Club Cologne (c4) e.V., Heliosstr. 6a, 50825 Köln, Germany',
                     'lat': 50.9504142,
-                    'lon': -6.9129647,
+                    'lon': 6.9129647,
                 },
             'state': {
                     'open': None,
@@ -88,7 +88,7 @@ def make_space_json(state):
 #                'icon': {'open':'url','closed':'url'},
                 },
             'contact': {
-                    'irc': 'irc://irc.freenode.org/#cccc',
+                    'irc': 'irc://chat.freenode.net/#cccc',
                     'email': 'mail@koeln.ccc.de',
                     'twitter': '@ccc_koeln',
                     'phone': '+49 221-49 24 119',
