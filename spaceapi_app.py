@@ -72,7 +72,7 @@ class ClubState(db.Model):
 
 def make_space_json(state):
     d = {
-            'api': '0.13,',
+            'api': '0.13',
             'space': 'CCC Cologne',
             'logo': 'https://koeln.ccc.de/images/C4-logo_transparent_black.svg',
             'url': 'https://koeln.ccc.de/',
