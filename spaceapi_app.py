@@ -112,7 +112,7 @@ def make_space_json(state):
 
 @app.route("/")
 def state():
-    current_state = ClubState.query.order_by("-id").first()
+    current_state = ClubState.query.order_by(ClubState.id.desc()).first()
 
     d = make_space_json(current_state)
     return jsonify(**d)
