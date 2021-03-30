@@ -1,4 +1,4 @@
-#!/usr/bin/env python2.7
+#!/usr/bin/env python3
 # -*- coding: utf8 -*-
 
 """
@@ -24,7 +24,7 @@ DB SETUP:
 """
 
 from flask import Flask, request, redirect, jsonify
-from flask.ext.sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 import calendar
 import time
