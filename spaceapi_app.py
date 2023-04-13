@@ -1,4 +1,4 @@
-#!/usr/bin/env python2.7
+#!/usr/bin/env python3
 # -*- coding: utf8 -*-
 
 """
@@ -19,12 +19,12 @@ EXAMPLE UPDATE CODE:
     >>> request.urlopen('http://localhost:5000/newstate', data=b'password=sharedsecret&state=closed&message=').read()
 
 DB SETUP:
-    >>> from spaceapi_app import db
-    >>> db.create_all()
+    >>> from spaceapi_app import db, app
+    >>> with app.app_context(): db.create_all()
 """
 
 from flask import Flask, request, redirect, jsonify
-from flask.ext.sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 import calendar
 import time
@@ -112,7 +112,7 @@ def make_space_json(state):
 
 @app.route("/")
 def state():
-    current_state = ClubState.query.order_by("-id").first()
+    current_state = ClubState.query.order_by(ClubState.id.desc()).first()
 
     d = make_space_json(current_state)
     return jsonify(**d)
