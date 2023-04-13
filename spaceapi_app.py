@@ -72,6 +72,7 @@ class ClubState(db.Model):
 
 def make_space_json(state):
     d = {
+            'api_compatibility': ['13', '14'],
             'api': '0.13',
             'space': 'CCC Cologne',
             'logo': 'https://koeln.ccc.de/images/C4-logo_transparent_black.svg',
@@ -81,6 +82,7 @@ def make_space_json(state):
                     'address': 'Chaos Computer Club Cologne (c4) e.V., Heliosstr. 6a, 50825 Köln, Germany',
                     'lat': 50.9504142,
                     'lon': 6.9129647,
+                    'timezone': 'Europe/Berlin',
                 },
             'state': {
                     'open': None,
@@ -88,10 +90,11 @@ def make_space_json(state):
 #                'icon': {'open':'url','closed':'url'},
                 },
             'contact': {
-                    'irc': 'irc://chat.freenode.net/#cccc',
+                    'irc': 'ircs://irc.hackint.org/#cccc',
                     'email': 'mail@koeln.ccc.de',
                     'twitter': '@ccc_koeln',
                     'phone': '+49 221-49 24 119',
+                    'mastodon': '@c4@chaos.social',
                 },
             'issue_report_channels': ['twitter'], #XXX
             'feeds': {
