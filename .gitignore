@@ -39,4 +39,5 @@ nosetests.xml
 *.sqlite3
 *.log
 
+/.vscode
 local_creds.py
