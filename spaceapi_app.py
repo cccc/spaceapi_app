@@ -93,7 +93,7 @@ def make_space_json(state):
                     'irc': 'ircs://irc.hackint.org/#cccc',
                     'email': 'mail@koeln.ccc.de',
                     'twitter': '@ccc_koeln',
-                    'phone': '+49 221-49 24 119',
+                    'phone': '+49 221-49 24 120',
                     'mastodon': '@c4@chaos.social',
                 },
             'issue_report_channels': ['twitter'], #XXX
